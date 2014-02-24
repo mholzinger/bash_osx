@@ -7,8 +7,9 @@ alias .="pwd"
 alias ..="cd .."
 alias more="less"
 
-# MacPorts aliases
+alias grep='grep --color=auto'
 
+# MacPorts aliases
 #alias finkupdate="fink selfupdate; fink update-all"
 #alias portupdate='sudo port sync; sudo port -v selfupdate ; sudo port -v upgrade installed'
 alias portupdate='sudo port sync; sudo port selfupdate ; sudo port upgrade outdated'
