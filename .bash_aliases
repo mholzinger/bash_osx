@@ -10,7 +10,10 @@ alias more="less"
 alias grep='grep --color=auto'
 
 # MacPorts aliases
-#alias finkupdate="fink selfupdate; fink update-all"
 #alias portupdate='sudo port sync; sudo port -v selfupdate ; sudo port -v upgrade installed'
 alias portupdate='sudo port sync; sudo port selfupdate ; sudo port upgrade outdated'
 alias portclean='sudo port uninstall inactive'
+
+# Lock screen session
+alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+
