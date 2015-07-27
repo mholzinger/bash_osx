@@ -17,3 +17,7 @@ alias portclean='sudo port uninstall inactive'
 # Lock screen session
 alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
 
+# mkdir and cd to path (make and go)
+alias mgo='function __mgo() { mkdir $1; cd $1; }; __mgo'
+
+
