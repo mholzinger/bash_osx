@@ -20,4 +20,13 @@ alias lockscreen='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/
 # mkdir and cd to path (make and go)
 alias mgo='function __mgo() { mkdir $1; cd $1; }; __mgo'
 
+# wget
+setwget() {
+    if hash wget 2>/dev/null; then
+        wget "$@"
+    else
+        function _wget() { curl "${1}" -o $(basename "${1}") ; };
+        alias wget='_wget'
+    fi
+}
 
